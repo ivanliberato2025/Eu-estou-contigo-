@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apoio Espiritual</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🙏 Apoio Espiritual</h1>
+    <p>Palavras de fé, esperança e conexão interior.</p>
+
+    <section>
+      <h2>🌟 Mensagens Inspiradoras</h2>
+      <ul>
+        <li>"Confie no tempo de Deus. Tenha fé, não desista." — [Confie no Tempo de Deus: Mensagens de Fé e Motivação](https://www.tiktok.com/@caioafiuneoficial/video/7485542343140003078)</li>
+        <li>"Cada amanhecer é um lembrete do cuidado divino." — [Uma mensagem de fé e esperança foi criada para tocar ...](https://www.instagram.com/reel/DFDcYjdxn4h/)</li>
+        <li>"Deus sabe de tudo. Você é capaz e sempre será." — [Deus sabe de tudo: Uma mensagem de fé e esperança](https://www.tiktok.com/@canaljvmusic/video/7343024297734049029)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🎥 Reflexões Espirituais em Vídeo</h2>
+      <p>Assista a especialistas falando sobre espiritualidade no cuidado ao paciente:</p>
+
+      <iframe width="100%" height="200" src="https://www.youtube.com/embed/InLUW7hJf0M" title="Como integrar a espiritualidade no cuidado aos pacientes?" frameborder="0" allowfullscreen></iframe>
+      <br><br>
+      <iframe width="100%" height="200" src="https://www.youtube.com/embed/eY8ibY5XQSE" title="COMO FALAR SOBRE ESPIRITUALIDADE COM SEUS ..." frameborder="0" allowfullscreen></iframe>
+      <br><br>
+      <iframe width="100%" height="200" src="https://www.youtube.com/embed/NmwFXuI1X-c" title="Espiritualidade nas Situações Limites: a Visão Médica" frameborder="0" allowfullscreen></iframe>
+      <br><br>
+      <iframe width="100%" height="200" src="https://www.youtube.com/embed/NbQ1CMG8fOQ" title="REFLEXÕES SOBRE ESPIRITUALIDADE, PRÁTICAS ..." frameborder="0" allowfullscreen></iframe>
+      <br><br>
+      <iframe width="100%" height="200" src="https://www.youtube.com/embed/2Jk2J_NbB4A" title="Espiritualidade e medicina" frameborder="0" allowfullscreen></iframe>
+      <br><br>
+      <iframe width="100%" height="200" src="https://www.youtube.com/embed/oOPG5seOd40" title="Como abordar a Religiosidade e Espiritualidade na terapia ..." frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section>
+      <h2>📝 Espaço para Reflexão</h2>
+      <p>Escreva uma oração, agradecimento ou pensamento espiritual:</p>
+      <textarea id="reflexao" rows="6" style="width:100%;"></textarea>
+      <br><br>
+      <button onclick="salvarReflexao()">💾 Salvar</button>
+      <button onclick="limparReflexao()">🧹 Limpar</button>
+    </section>
+
+    <a href="index.html">🔙 Voltar ao início</a>
+  </div>
+
+  <script>
+    function salvarReflexao() {
+      const texto = document.getElementById('reflexao').value;
+      localStorage.setItem('reflexaoEspiritual', texto);
+      alert('Reflexão salva com sucesso!');
+    }
+
+    function limparReflexao() {
+      document.getElementById('reflexao').value = '';
+      localStorage.removeItem('reflexaoEspiritual');
+    }
+
+    window.onload = function() {
+      const textoSalvo = localStorage.getItem('reflexaoEspiritual');
+      if (textoSalvo) {
+        document.getElementById('reflexao').value = textoSalvo;
+      }
+    }
+  </script>
+</body>
+</html>
