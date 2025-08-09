@@ -1,40 +1,108 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
+/* Reset básico */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
   padding: 20px;
 }
 
+/* Container central */
 .container {
-  max-width: 600px;
+  max-width: 800px;
   margin: auto;
-  background: white;
+  background-color: #ffffff;
   padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #ccc;
-  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
+/* Títulos */
 h1 {
-  color: #c2185b;
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #4a90e2;
 }
 
-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+h2 {
+  font-size: 1.4em;
   margin-top: 30px;
+  margin-bottom: 10px;
+  color: #2c3e50;
 }
 
-nav a {
+/* Parágrafos e listas */
+p {
+  margin-bottom: 15px;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Links */
+a {
+  color: #4a90e2;
   text-decoration: none;
-  background: #c2185b;
-  color: white;
-  padding: 15px;
-  border-radius: 8px;
-  font-size: 18px;
 }
 
-nav a:hover {
-  background: #a3154a;
+a:hover {
+  text-decoration: underline;
+}
+
+/* Botões */
+button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #357ab8;
+}
+
+/* Textarea */
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  resize: vertical;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
