@@ -21,6 +21,81 @@
     </section>
 
     <section>
+      <h2>🧘 Meditação Guiada</h2>
+      <p>Escolha uma prática para relaxar e encontrar equilíbrio:</p>
+
+      <iframe width="100%" height="200" src="https://www.youtube.com/embed/RylLBe8yAwc" title="Meditação Guiada 5 Minutos" frameborder="0" allowfullscreen></iframe>
+      <br><br>
+      <iframe width="100%" height="200" src="https://www.youtube.com/embed/vJfwuCB5C8o" title="Meditação para Calma e Equilíbrio" frameborder="0" allowfullscreen></iframe>
+      <br><br>
+      <iframe width="100%" height="200" src="https://www.youtube.com/embed/QQkRN4tjHns" title="Mindfulness e Concentração" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section>
+      <h2>📓 Diário Emocional</h2>
+      <p>Escreva o que está sentindo hoje. Isso ajuda a aliviar a mente e organizar os pensamentos.</p>
+      <textarea id="diario" rows="6" style="width:100%;"></textarea>
+      <br><br>
+      <button onclick="salvarDiario()">💾 Salvar</button>
+      <button onclick="limparDiario()">🧹 Limpar</button>
+    </section>
+
+    <section>
+      <h2>📚 Recursos de Apoio</h2>
+      <ul>
+        <li><a href="https://www.oncoguia.org.br/" target="_blank">Instituto Oncoguia</a></li>
+        <li><a href="https://www.cancer.org.br/" target="_blank">Fundação do Câncer</a></li>
+        <li><a href="https://www.setor3.com.br/apoio-emocional/" target="_blank">Setor3 - Apoio Emocional</a></li>
+      </ul>
+    </section>
+
+    <a href="index.html">🔙 Voltar ao início</a>
+  </div>
+
+  <script>
+    function salvarDiario() {
+      const texto = document.getElementById('diario').value;
+      localStorage.setItem('diarioPaciente', texto);
+      alert('Diário salvo com sucesso!');
+    }
+
+    function limparDiario() {
+      document.getElementById('diario').value = '';
+      localStorage.removeItem('diarioPaciente');
+    }
+
+    window.onload = function() {
+      const textoSalvo = localStorage.getItem('diarioPaciente');
+      if (textoSalvo) {
+        document.getElementById('diario').value = textoSalvo;
+      }
+    }
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apoio Emocional</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💬 Apoio Emocional</h1>
+    <p>Palavras que acolhem, fortalecem e inspiram.</p>
+
+    <section>
+      <h2>🌟 Frases Motivacionais</h2>
+      <ul>
+        <li>"Você é mais forte do que imagina."</li>
+        <li>"Cada dia é uma nova chance de recomeçar."</li>
+        <li>"A esperança é a luz que nunca se apaga."</li>
+      </ul>
+    </section>
+
+    <section>
       <h2>🎥 Vídeos Reconfortantes</h2>
       <iframe width="100%" height="200" src="https://www.youtube.com/embed/4UZrsTqkcW4" title="Mensagem de Esperança" frameborder="0" allowfullscreen></iframe>
     </section>
