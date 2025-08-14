@@ -10,78 +10,157 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #e0f7fa, #fce4ec);
+      background-color: #f3e5f5;
       color: #333;
     }
+
     header {
       background-color: #6a1b9a;
       color: white;
       padding: 1rem;
-      text-align: center;
-    }
-    nav {
       display: flex;
-      justify-content: center;
-      gap: 2rem;
-      background-color: #f3e5f5;
-      padding: 0.5rem;
+      align-items: center;
+      justify-content: space-between;
     }
-    nav a {
-      text-decoration: none;
-      color: #6a1b9a;
-      font-weight: 600;
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
     }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo i {
+      font-size: 1.5rem;
+    }
+
     .hero {
       text-align: center;
-      padding: 3rem 1rem;
+      padding: 2rem 1rem;
     }
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+
+    .hero h2 {
+      font-size: 2rem;
+      color: #4a148c;
+      margin-bottom: 0.5rem;
     }
+
     .hero p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       max-width: 600px;
       margin: auto;
+      color: #555;
     }
-    .cta-button {
-      margin-top: 2rem;
-      padding: 0.8rem 1.5rem;
-      background-color: #6a1b9a;
-      color: white;
-      border: none;
-      border-radius: 8px;
+
+    .sections {
+      padding: 2rem 1rem;
+    }
+
+    .sections h3 {
+      font-size: 1.3rem;
+      color: #4a148c;
+      margin-bottom: 1rem;
+    }
+
+    .section-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
       font-size: 1rem;
-      cursor: pointer;
+      color: #333;
     }
+
+    .section-item i {
+      font-size: 1.2rem;
+      color: #6a1b9a;
+    }
+
+    .about {
+      padding: 2rem 1rem;
+      background-color: #ede7f6;
+    }
+
+    .about h3 {
+      font-size: 1.3rem;
+      color: #4a148c;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .about p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #555;
+    }
+
     footer {
       text-align: center;
       padding: 1rem;
-      background-color: #f3e5f5;
-      color: #6a1b9a;
       font-size: 0.9rem;
+      color: #6a1b9a;
+    }
+
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #6a1b9a;
+      display: flex;
+      justify-content: space-around;
+      padding: 0.8rem 0;
+    }
+
+    .bottom-nav i {
+      color: white;
+      font-size: 1.2rem;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1><i class="fas fa-heart"></i> Eu estou contigo</h1>
+    <div class="logo">
+      <i class="fas fa-heart"></i>
+      <h1>Eu estou contigo</h1>
+    </div>
+    <i class="fas fa-sun"></i>
   </header>
 
-  <nav>
-    <a href="#">Início</a>
-    <a href="#">Mensagens</a>
-    <a href="#">Contato</a>
-  </nav>
-
   <section class="hero">
-    <h1>Você não está sozinho</h1>
-    <p>Este espaço foi criado para oferecer apoio emocional, espiritual e humano a quem enfrenta momentos difíceis. Aqui, cada palavra é um abraço.</p>
-    <button class="cta-button">Receber uma mensagem</button>
+    <h2>Bem-vindo ao Espaço de Cuidado</h2>
+    <p>Este é um ambiente criado com carinho para apoiar você em sua jornada.</p>
+  </section>
+
+  <section class="sections">
+    <h3>Navegue pelas seções</h3>
+    <div class="section-item"><i class="fas fa-comment-dots"></i> Apoio Emocional</div>
+    <div class="section-item"><i class="fas fa-apple-alt"></i> Nutrição e Bem-Estar</div>
+    <div class="section-item"><i class="fas fa-person-walking"></i> Atividades Físicas Suaves</div>
+    <div class="section-item"><i class="fas fa-droplet"></i> Cuidados com a Pele e Autoestima</div>
+    <div class="section-item"><i class="fas fa-dove"></i> Apoio Espiritual</div>
+  </section>
+
+  <section class="about">
+    <h3><i class="fas fa-lightbulb"></i> Sobre este espaço</h3>
+    <p>Este projeto foi criado para oferecer suporte integral — físico, emocional e espiritual — a pacientes em tratamento. Cada página traz conteúdos pensados com empatia, leveza e respeito.</p>
   </section>
 
   <footer>
-    &copy; 2025 Eu estou contigo. Feito com carinho por Ivan Liberato.
+    Desenvolvido com carinho por Ivan 💙
   </footer>
+
+  <div class="bottom-nav">
+    <i class="fas fa-home"></i>
+    <i class="fas fa-comment"></i>
+    <i class="fas fa-envelope"></i>
+  </div>
+
 </body>
 </html>
