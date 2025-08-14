@@ -1,36 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head><link rel="manifest" href="manifest.json" />
-
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bem-vindo</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Eu estou contigo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #fce4ec);
+      color: #333;
+    }
+    header {
+      background-color: #6a1b9a;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #f3e5f5;
+      padding: 0.5rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #6a1b9a;
+      font-weight: 600;
+    }
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    .cta-button {
+      margin-top: 2rem;
+      padding: 0.8rem 1.5rem;
+      background-color: #6a1b9a;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #f3e5f5;
+      color: #6a1b9a;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>🌈 Bem-vindo ao Espaço de Cuidado</h1>
-    <p>Este é um ambiente criado com carinho para apoiar você em sua jornada.</p>
+  <header>
+    <h1><i class="fas fa-heart"></i> Eu estou contigo</h1>
+  </header>
 
-    <section>
-      <h2>🧭 Navegue pelas seções</h2>
-      <ul style="list-style: none; padding-left: 0;">
-        <li><a href="apoio.html">💬 Apoio Emocional</a></li>
-        <li><a href="nutricao.html">🥗 Nutrição e Bem-Estar</a></li>
-        <li><a href="atividade.html">🏃‍♀️ Atividades Físicas Suaves</a></li>
-        <li><a href="autoestima.html">💄 Cuidados com a Pele e Autoestima</a></li>
-        <li><a href="espiritualidade.html">🙏 Apoio Espiritual</a></li>
-      </ul>
-    </section>
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Mensagens</a>
+    <a href="#">Contato</a>
+  </nav>
 
-    <section>
-      <h2>💡 Sobre este espaço</h2>
-      <p>Este projeto foi criado para oferecer suporte integral — físico, emocional e espiritual — a pacientes em tratamento. Cada página traz conteúdos pensados com empatia, leveza e respeito.</p>
-    </section>
+  <section class="hero">
+    <h1>Você não está sozinho</h1>
+    <p>Este espaço foi criado para oferecer apoio emocional, espiritual e humano a quem enfrenta momentos difíceis. Aqui, cada palavra é um abraço.</p>
+    <button class="cta-button">Receber uma mensagem</button>
+  </section>
 
-    <footer>
-      <p style="font-size: 0.9em; color: #666;">Desenvolvido com carinho por Ivan 💙</p>
-    </footer>
-  </div>
+  <footer>
+    &copy; 2025 Eu estou contigo. Feito com carinho por Ivan Liberato.
+  </footer>
 </body>
 </html>
